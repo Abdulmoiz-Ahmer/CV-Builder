@@ -1,4 +1,4 @@
-export interface Cv {
+export interface CV {
   id: number;
   firstName: string;
   lastName: string;

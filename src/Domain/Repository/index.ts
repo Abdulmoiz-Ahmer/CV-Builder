@@ -1,1 +1,1 @@
-export * from "./CvRepository";
+export * from "./CVRepository";

@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "baseUrl": "src",
+    "paths": {
+      "src": ["src"],
+      "Core": ["src/Core"],
+      "Domain": ["src/Domain"],
+      "Presentation": ["src/Presentation"],
+      "Data": ["src/Data"]
+    }
+  },
+  "include": ["src"],
+  "exclude": ["node_modules"]
+}
