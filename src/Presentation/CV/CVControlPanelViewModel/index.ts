@@ -1,22 +1,20 @@
 import { useState } from "react";
-import { CVAPIDataSourceImpl } from "../../../Data/";
-import { TodoRepositoryImpl } from "../../../Data/Repository/TodoRepositoryImpl";
+import { CVRepositoryImpl } from "../../../Data";
+import CVAPIDataSourceImpl from "../../../Data/DataSource/API/CVAPIDataSourceImpl";
 import { CV } from "../../../Domain";
 import { GetCV } from "../../../Domain";
 
 export default function TodoListViewModel() {
-  const [todos, setTodos] = useState<Todo[]>([]);
+  const [cv, setCV] = useState<CV[]>([]);
 
-  const UseCase = new GetTodos(
-    new TodoRepositoryImpl(new TodoAPIDataSourceImpl())
-  );
+  const UseCase = new GetCV(new CVRepositoryImpl(new CVAPIDataSourceImpl()));
 
-  async function getTodos() {
-    setTodos(await UseCase.invoke());
+  async function getCV() {
+    setCV(await UseCase.invoke());
   }
 
   return {
-    getTodos,
-    todos,
+    getCV,
+    cv,
   };
 }

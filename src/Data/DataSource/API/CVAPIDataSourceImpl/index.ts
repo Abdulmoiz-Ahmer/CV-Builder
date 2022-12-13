@@ -16,17 +16,6 @@ export default class CVAPIDataSourceImpl implements CVDataSource {
   async getCV(): Promise<CV[]> {
     let response = await myFetch<CVAPIEntity[]>(`${BASE_URL}/cv`);
     let data = await response.json();
-    return data.map((item) => ({
-      id: item.id,
-      title: item.firstName,
-      position: item.position,
-      seniorityLevel: item.seniorityLevel,
-      citizenship: item.citizenship,
-      currentLocation: item.currentLocation,
-      technicalExperienceSummery: item.technicalExperienceSummery,
-      softAndLeadershipSkills: item.softAndLeadershipSkills,
-      readinessToBusinessTrips: item.readinessToBusinessTrips,
-      workExperience: item.workExperience,
-    }));
+    return data;
   }
 }

@@ -1,11 +1,9 @@
-import React from 'react';
-import {CVControlPanelView} from './Presentation'
-import './App.css';
+import React from "react";
+import { CVControlPanelView } from "./Presentation";
+import "./App.css";
 
 function App() {
-  return (
-  
-  );
+  return <CVControlPanelView />;
 }
 
 export default App;
