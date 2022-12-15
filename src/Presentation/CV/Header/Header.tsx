@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "./Header.css";
-import ProfileBuilder from "../../../assets/Profile-Builder.svg";
+import Ciklumlogo from "../../../assets/Ciklum_logo.svg";
 import ProfileImage from "../../../assets/user.png";
 
 function Header() {
@@ -12,7 +12,18 @@ function Header() {
   };
   return (
     <nav>
-      <img src={ProfileBuilder} className="logo" alt="Profile" />
+      <div className="ciklum-info">
+        <div className="ciklum-logo">
+          <img src={Ciklumlogo} className="logo" alt="Profile" />
+          <div className="ciklum">
+            <span className="ciklum-text">CIKLUM</span>
+            <span className="ciklum-builder">PROFILE BUILDER</span>
+          </div>
+        </div>
+
+        <div className="profile-builder"></div>
+      </div>
+
       <div className="userProfile">
         <img src={ProfileImage} alt="cat" className="user-pic" />
         <div className="designation">

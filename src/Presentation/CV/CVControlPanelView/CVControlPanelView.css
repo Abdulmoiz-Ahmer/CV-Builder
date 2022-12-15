@@ -61,6 +61,13 @@
   right: 0%;
   transform: translate(-50%, -50%);
 }
+
+@media screen and (max-width: 1024px) {
+  .img-ellipse {
+    /* left: -9%; */
+  }
+}
+
 @media screen and (min-width: 1400px) {
   .img-ellipse {
     left: -9%;

@@ -7,8 +7,15 @@ nav {
   justify-content: space-between;
   position: relative;
 }
-.logo {
-  width: 120px;
+/* .logo {
+  max-width: ;
+  max-height: 4vh;
+} */
+.ciklum-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  column-gap: 12px;
 }
 .user-pic {
   width: 50px;
@@ -53,4 +60,22 @@ nav {
 }
 .user-designation {
   font-size: 12px;
+}
+.ciklum-info {
+  display: flex;
+}
+.ciklum {
+  display: flex;
+  flex-direction: column;
+}
+.ciklum-logo {
+  display: flex;
+  column-gap: 12px;
+}
+.ciklum-text {
+  font-weight: 500;
+}
+.ciklum-builder {
+  font-weight: 500;
+  color: #09c2c3;
 }
