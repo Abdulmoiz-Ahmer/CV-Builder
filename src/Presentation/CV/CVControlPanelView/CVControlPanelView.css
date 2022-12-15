@@ -1,0 +1,72 @@
+.main {
+  width: 100%;
+}
+.hero {
+  /* min-height: 100vh; */
+  background-color: #f2f2f2;
+  color: black;
+  position: relative;
+  min-height: calc(100vh - 70px);
+}
+.img-ellipse {
+  position: absolute;
+  top: 60%;
+  bottom: 0%;
+  left: -13%;
+}
+
+.img-substraction {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  max-width: 22vw;
+  max-height: 45vh;
+}
+.hero-body {
+  position: absolute;
+  left: 37%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+}
+.font {
+  font-family: "normal GT Walsheim Pro";
+}
+.heading {
+  font-size: 55px;
+  color: #000000;
+}
+.welcome-text {
+  font-size: 25px;
+  color: #000000;
+}
+.description {
+  font-size: 25px;
+  color: #535252;
+}
+.btn {
+  width: 331px;
+  height: 50px;
+  background: transparent
+    linear-gradient(270deg, #00febe 0%, #3271af 35%, #0022bb 100%) 0% 0%
+    no-repeat padding-box;
+  border-radius: 25px;
+  color: #fff;
+  font-size: 25px;
+  border: none;
+}
+.start-button {
+  position: absolute;
+  left: 37%;
+  bottom: 23%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+@media screen and (min-width: 1400px) {
+  .img-ellipse {
+    left: -9%;
+  }
+  .start-button {
+    left: 39%;
+    bottom: 35%;
+  }
+}
