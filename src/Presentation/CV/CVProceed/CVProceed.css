@@ -29,43 +29,52 @@
   transform: translate(-50%, -50%);
 }
 .font {
-  font-family: "normal GT Walsheim Pro";
+  font-family: "normal GT Walsheim Pro,Thin";
 }
 .heading {
   font-size: 55px;
   color: #000000;
 }
-.welcome-text {
-  font-size: 25px;
+.proceed-text {
+  font-size: 55px;
   color: #000000;
 }
 .description {
   font-size: 25px;
   color: #535252;
 }
-.btn {
-  width: 331px;
-  height: 50px;
-  background: transparent
-    linear-gradient(270deg, #00febe 0%, #3271af 35%, #0022bb 100%) 0% 0%
-    no-repeat padding-box;
-  border-radius: 25px;
-  color: #fff;
-  font-size: 25px;
-  border: none;
-  cursor: pointer;
-}
-.start-button {
+
+.start-profile {
   position: absolute;
   left: 37%;
-  bottom: 23%;
+  bottom: 5%;
   right: 0%;
   transform: translate(-50%, -50%);
 }
+.new-profile {
+  width: 135px;
+  height: 135px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
 
+.boxes {
+  display: flex;
+  gap: 51px;
+}
+.profile-text {
+  font-size: 18px;
+  text-align: center;
+  color: #393838;
+}
 @media screen and (max-width: 1024px) {
-  .img-ellipse {
-    /* left: -9%; */
+  .start-profile {
+    bottom: 0%;
   }
 }
 
@@ -73,8 +82,8 @@
   .img-ellipse {
     left: -9%;
   }
-  .start-button {
+  .start-profile {
     left: 39%;
-    bottom: 35%;
+    bottom: 23%;
   }
 }

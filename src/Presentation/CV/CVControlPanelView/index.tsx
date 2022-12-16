@@ -1,10 +1,17 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./CVControlPanelView.css";
+import { useNavigate } from "react-router-dom";
 import backgroundImage from "../../../assets/welcome_background.svg";
 import Ellipse from "../../../assets/Ellipse.svg";
 import Subtraction from "../../../assets/Subtraction.svg";
 function index() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const navigate = useNavigate();
+  const routeChange = () => {
+    navigate("ciklum-profile");
+  };
+
   return (
     <main className="main">
       <Header />
@@ -31,7 +38,9 @@ function index() {
           </div>
         </div>
         <div className="start-button">
-          <button className="btn fonts">Start Building Now</button>
+          <button onClick={routeChange} className="btn fonts">
+            Start Building Now
+          </button>
         </div>
       </div>
     </main>
