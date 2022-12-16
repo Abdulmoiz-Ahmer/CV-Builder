@@ -1,0 +1,24 @@
+<svg id="Group_21" data-name="Group 21" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="33.395" height="38.678" viewBox="0 0 33.395 38.678">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.698" y1="0.064" x2="0.79" y2="0.931" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#001cbe"/>
+      <stop offset="0.459" stop-color="#03adba"/>
+      <stop offset="1" stop-color="#07fec7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="0.432" y1="0.058" x2="0.965" y2="0.93" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#001cbe"/>
+      <stop offset="0.473" stop-color="#0083c2"/>
+      <stop offset="0.771" stop-color="#07fec7"/>
+      <stop offset="1" stop-color="#07fec7"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="0.164" y1="0.148" x2="0.866" y2="0.788" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#001cbe"/>
+      <stop offset="0.547" stop-color="#0ba9c2"/>
+      <stop offset="1" stop-color="#07fec7"/>
+    </linearGradient>
+  </defs>
+  <path id="Path_35" data-name="Path 35" d="M19.339,38.678A19.339,19.339,0,1,1,32.366,5.046a1.358,1.358,0,1,1-1.831,2.007,16.623,16.623,0,1,0,.543,24.055A1.358,1.358,0,0,1,33,33.031a19.216,19.216,0,0,1-13.658,5.647" transform="translate(0 0)" fill="url(#linear-gradient)"/>
+  <path id="Path_36" data-name="Path 36" d="M44.12,61.748a13.246,13.246,0,0,1-9.571-4.156,14.115,14.115,0,0,1-3.994-9.847,13.766,13.766,0,0,1,9.938-13.358,1.358,1.358,0,0,1,.719,2.62A11.043,11.043,0,0,0,33.27,47.746c0,6.118,4.968,11.287,10.849,11.287a17.686,17.686,0,0,0,3.836-.362,1.358,1.358,0,1,1,.589,2.652,20.331,20.331,0,0,1-4.426.428" transform="translate(-25.326 -28.465)" fill="url(#linear-gradient-2)"/>
+  <path id="Path_37" data-name="Path 37" d="M70.414,89.073a8.307,8.307,0,0,1-8.379-6.9,9.138,9.138,0,0,1,2.39-8.111A1.358,1.358,0,0,1,66.4,75.927l-.023.024a6.42,6.42,0,0,0-1.679,5.7c.667,3.386,3.621,5.26,7.186,4.559a7.447,7.447,0,0,0,3.191-1.64,1.358,1.358,0,0,1,1.85,1.988l-.01.009a10.2,10.2,0,0,1-4.506,2.307,10.341,10.341,0,0,1-2,.2" transform="translate(-51.277 -61.037)" fill="url(#linear-gradient-3)"/>
+  <rect id="Rectangle_6" data-name="Rectangle 6" width="33.395" height="38.678" transform="translate(0 0)" fill="none"/>
+</svg>

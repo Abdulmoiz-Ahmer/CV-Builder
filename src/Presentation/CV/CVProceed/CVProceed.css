@@ -1,0 +1,89 @@
+.main {
+  width: 100%;
+}
+.hero {
+  /* min-height: 100vh; */
+  background-color: #f2f2f2;
+  color: black;
+  position: relative;
+  min-height: calc(100vh - 70px);
+}
+.img-ellipse {
+  position: absolute;
+  top: 60%;
+  bottom: 0%;
+  left: -13%;
+}
+
+.img-substraction {
+  position: absolute;
+  right: 0%;
+  bottom: 0%;
+  max-width: 22vw;
+  max-height: 45vh;
+}
+.hero-body {
+  position: absolute;
+  left: 37%;
+  top: 28%;
+  transform: translate(-50%, -50%);
+}
+.font {
+  font-family: "normal GT Walsheim Pro,Thin";
+}
+.heading {
+  font-size: 55px;
+  color: #000000;
+}
+.proceed-text {
+  font-size: 55px;
+  color: #000000;
+}
+.description {
+  font-size: 25px;
+  color: #535252;
+}
+
+.start-profile {
+  position: absolute;
+  left: 37%;
+  bottom: 5%;
+  right: 0%;
+  transform: translate(-50%, -50%);
+}
+.new-profile {
+  width: 135px;
+  height: 135px;
+  background-color: #fff;
+  border-radius: 18px;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.boxes {
+  display: flex;
+  gap: 51px;
+}
+.profile-text {
+  font-size: 18px;
+  text-align: center;
+  color: #393838;
+}
+@media screen and (max-width: 1024px) {
+  .start-profile {
+    bottom: 0%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .img-ellipse {
+    left: -9%;
+  }
+  .start-profile {
+    left: 39%;
+    bottom: 23%;
+  }
+}

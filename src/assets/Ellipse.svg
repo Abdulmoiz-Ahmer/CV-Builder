@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="343" height="343" viewBox="0 0 343 343">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#fff"/>
+      <stop offset="0.271" stop-color="#fff"/>
+      <stop offset="1" stop-color="#e5e8ec"/>
+    </linearGradient>
+    <filter id="Ellipse_23" x="0" y="0" width="343" height="343" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="40" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="Ellipse_23-2" x="0" y="0" width="343" height="343" filterUnits="userSpaceOnUse">
+      <feOffset input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.051" result="color"/>
+      <feComposite operator="out" in="SourceGraphic" in2="blur-2"/>
+      <feComposite operator="in" in="color"/>
+      <feComposite operator="in" in2="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g data-type="innerShadowGroup">
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_23)">
+      <circle id="Ellipse_23-3" data-name="Ellipse 23" cx="51.5" cy="51.5" r="51.5" transform="translate(120 120)" opacity="0.74" fill="url(#linear-gradient)"/>
+    </g>
+    <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#Ellipse_23-2)">
+      <circle id="Ellipse_23-4" data-name="Ellipse 23" cx="51.5" cy="51.5" r="51.5" transform="translate(120 120)" fill="#fff" opacity="0.74"/>
+    </g>
+  </g>
+</svg>
