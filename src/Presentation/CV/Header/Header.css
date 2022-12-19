@@ -6,6 +6,7 @@ nav {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  box-shadow: 0px 2px 6px #00000010;
 }
 /* .logo {
   max-width: ;

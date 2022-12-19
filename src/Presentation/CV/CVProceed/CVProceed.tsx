@@ -1,12 +1,18 @@
 import React from "react";
 import Header from "../Header/Header";
 import "./CVProceed.css";
+import { useNavigate } from "react-router-dom";
 import LinkdienIcon from "../../../assets/LinkdienIcon.svg";
 import Ellipse from "../../../assets/Ellipse.svg";
 import Subtraction from "../../../assets/Subtraction.svg";
 import NewProfile from "../../../assets/NewProfileIcon.svg";
 import DriveIcon from "../../../assets/DriveIcon.svg";
 function index() {
+  // eslint-disable-next-line react-hooks/rules-of-hooks
+  const navigate = useNavigate();
+  const routeChange = () => {
+    navigate("/basic-info");
+  };
   return (
     <main className="main">
       <Header />
@@ -29,7 +35,7 @@ function index() {
         <div className="start-profile">
           <div className="boxes">
             <div className="Profile-box">
-              <div className="new-profile">
+              <div className="new-profile" onClick={routeChange}>
                 <img
                   src={NewProfile}
                   alt="new-profile"
