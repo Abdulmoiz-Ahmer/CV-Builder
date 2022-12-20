@@ -6,7 +6,7 @@ import CloseIcon from "../../../assets/CloseIcon.svg";
 import Ellipse from "../../../assets/Ellipse.svg";
 import Subtraction from "../../../assets/Subtraction.svg";
 import BasciInfoImage from "../../../assets/basicInfo-background.png";
-import DriveIcon from "../../../assets/DriveIcon.svg";
+import ArrowIcon from "../../../assets/arrow.svg";
 function index() {
   return (
     <main className="info">
@@ -29,18 +29,26 @@ function index() {
             <div className="input">
               <label className="field-label ">Name:</label>
               <div className="input-fields">
-                <label className="first-label ">First</label>
-                <input
-                  type="text"
-                  name="field1"
-                  className="field-divided"
-                />{" "}
-                <input
-                  type="text"
-                  name="field2"
-                  className="field-divided"
-                  placeholder="Last"
-                />
+                <div className="form-group-input">
+                  <input
+                    type="text"
+                    name="field1"
+                    className="field-divided"
+                    placeholder=""
+                    required
+                  />{" "}
+                  <label className="float-label"> First Name</label>
+                </div>
+                <div className="form-group-input">
+                  <input
+                    type="text"
+                    name="field2"
+                    className="field-divided"
+                    placeholder=""
+                    required
+                  />
+                  <label className="float-label"> Last Name</label>
+                </div>
               </div>
             </div>
             <div className="form-group input">
@@ -71,26 +79,35 @@ function index() {
                 </div>
               </div>
             </div>
-            <div className="form-group-email input">
+            <div className="country-form-group input">
               <label className="field-label">Citizenship:</label>
+
               <input
                 type="text"
                 name="field3"
                 className="field-long input-fields"
+                required
               />
+              <label className="country-label"> Country</label>
             </div>
 
-            <div className="form-group-email input">
+            <div className="country-form-group input">
               <label className="field-label">Current Location:</label>
               <input
                 type="text"
                 name="field3"
                 className="field-long input-fields"
+                required
               />
+              <label className="country-label"> City</label>
             </div>
           </div>
           <div className="next-button">
-            <button className="next">Next</button>
+            <div className="footer-part">
+              <button className="next">Next</button>
+              <img src={ArrowIcon} alt="arrowIcon" className="" />
+              <span>2. Profile summery</span>
+            </div>
           </div>
         </form>
       </div>

@@ -47,33 +47,52 @@
 .input {
   display: flex;
   gap: 52px;
-  padding: 0;
+  margin-top: 5px;
 }
 /* float value */
-
-input:focus ~ .floating-label,
-input:not(:focus):valid ~ .floating-label {
-  top: 8px;
-  bottom: 10px;
-  left: 20px;
-  font-size: 11px;
-  opacity: 1;
-}
-
-/* .inputText {
-  font-size: 14px;
-  width: 200px;
-  height: 35px;
-} */
-
-.floating-label {
+.float-label {
   position: absolute;
-  pointer-events: none;
-  left: 20px;
-  top: 18px;
+  left: 2%;
+  padding-top: 4px;
+  font-size: 14px;
+  color: #329191;
+  transition: 0.2s ease all;
+}
+input:focus ~ .float-label,
+input:not(:focus):valid ~ .float-label {
+  top: -10%;
+  font-size: 12px;
+}
+.form-group-input {
+  position: relative;
+}
+.float-label:before {
+  content: " *";
+  color: red;
+}
+.country-form-group {
+  position: relative;
+  margin-top: 10px;
+}
+.country-label {
+  position: absolute;
+  left: 37%;
+  padding-top: 4px;
+  font-size: 14px;
+  color: #329191;
   transition: 0.2s ease all;
 }
 
+.country-label:before {
+  content: " *";
+  color: red;
+}
+
+input:focus ~ .country-label,
+input:not(:focus):valid ~ .country-label {
+  top: -10%;
+  font-size: 12px;
+}
 .radio-group {
   width: 70%;
 }
@@ -101,6 +120,7 @@ input:not(:focus):valid ~ .floating-label {
 .input-fields {
   width: 70%;
   display: flex;
+  gap: 28px;
   justify-content: space-between;
 }
 .basic-heading {
@@ -128,7 +148,7 @@ select {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   border: 1px solid #d5d5d5;
-  padding: 7px;
+  padding: 12px;
   margin: 0px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;
@@ -152,13 +172,13 @@ select {
   border: 1px solid #88d5e9;
 } */
 .form-style-1 .field-divided {
-  width: 47.5%;
-  position: relative;
+  /* position: relative; */
 }
 .form-group-dropdown {
 }
 .form-style-1 .field-long {
   display: block;
+  position: relative;
 }
 .form-style-1 .field-select {
   width: 70%;
@@ -183,6 +203,16 @@ select {
 }
 .form-style-1 .required {
   color: red;
+}
+.footer-part {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+}
+.footer-part span {
+  font-size: 14px;
+  padding: 7px;
+  font-weight: 500;
 }
 .form-group-email {
   margin-top: 14px;
