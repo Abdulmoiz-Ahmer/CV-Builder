@@ -106,7 +106,7 @@ function index() {
             <div className="footer-part">
               <button className="next">Next</button>
               <img src={ArrowIcon} alt="arrowIcon" className="" />
-              <span>2. Profile summery</span>
+              <span>2. Profile summary</span>
             </div>
           </div>
         </form>
