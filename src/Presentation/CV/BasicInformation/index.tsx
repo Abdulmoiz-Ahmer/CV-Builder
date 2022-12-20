@@ -24,16 +24,16 @@ function index() {
 
         <form>
           <div className="form-style-1">
-            <p className="heading">1. Basic Information</p>
+            <p className="basic-heading">1. Basic Information</p>
 
-            <div className="form-group input">
-              <label className="field-label">Name:</label>
+            <div className="input">
+              <label className="field-label ">Name:</label>
               <div className="input-fields">
+                <label className="first-label ">First</label>
                 <input
                   type="text"
                   name="field1"
                   className="field-divided"
-                  placeholder="First"
                 />{" "}
                 <input
                   type="text"
@@ -46,9 +46,9 @@ function index() {
             <div className="form-group input">
               <label className="field-label">Position Applied for:</label>
               <select name="field4" className="field-select">
-                <option value="Advertise">Advertise</option>
-                <option value="Partnership">Partnership</option>
-                <option value="General Question">General</option>
+                <option value="Advertise">Database Engineer</option>
+                <option value="Partnership">QA - Automation engineer</option>
+                <option value="General Question">Project Manager</option>
               </select>
             </div>
             <div className="form-group input">
@@ -88,6 +88,9 @@ function index() {
                 className="field-long input-fields"
               />
             </div>
+          </div>
+          <div className="next-button">
+            <button className="next">Next</button>
           </div>
         </form>
       </div>

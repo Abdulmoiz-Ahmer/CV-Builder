@@ -1,7 +1,5 @@
 .info {
   width: 100%;
-
-  /* background-color: #fff; */
 }
 .info-container {
   /* min-height: 100vh; */
@@ -39,23 +37,49 @@
   padding-top: 6px;
 }
 .form-style-1 {
-  max-width: 400px;
+  max-width: 700px;
   padding-left: 192px;
-  margin-left: 25px;
   display: flex;
   flex-direction: column;
+  position: relative;
   font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
 }
 .input {
   display: flex;
+  gap: 52px;
   padding: 0;
+}
+/* float value */
+
+input:focus ~ .floating-label,
+input:not(:focus):valid ~ .floating-label {
+  top: 8px;
+  bottom: 10px;
+  left: 20px;
+  font-size: 11px;
+  opacity: 1;
+}
+
+/* .inputText {
+  font-size: 14px;
+  width: 200px;
+  height: 35px;
+} */
+
+.floating-label {
+  position: absolute;
+  pointer-events: none;
+  left: 20px;
+  top: 18px;
+  transition: 0.2s ease all;
 }
 
 .radio-group {
   width: 70%;
 }
-.radio-label {
-  font-weight: normal;
+.radio-group label {
+  padding-right: 34px;
+  /* margin: 0 10px 0 10px; */
 }
 .radio-group label::after {
   content: "\00a0\00a0\00a0\00a0"; /* eq &nbsp; x 4 */
@@ -79,8 +103,8 @@
   display: flex;
   justify-content: space-between;
 }
-.heading {
-  font-size: 55px;
+.basic-heading {
+  font-size: 40px;
   white-space: nowrap;
   font-family: "GT Walsheim Pro thin";
   color: #000000;
@@ -139,19 +163,20 @@ select {
 .form-style-1 .field-select {
   width: 70%;
 }
-.form-style-1 .field-textarea {
-  height: 100px;
+.next-button {
+  position: absolute;
+  bottom: 7%;
+  left: 32%;
 }
-.form-style-1 input[type="submit"],
-.form-style-1 input[type="button"] {
-  background: #4b99ad;
-  padding: 8px 15px 8px 15px;
+
+.next {
+  width: 160px;
+  height: 36px;
+  background: #09c2c3;
+  border-radius: 25px;
+  padding: 8px;
   border: none;
   color: #fff;
-}
-.form-style-1 input[type="submit"]:hover,
-.form-style-1 input[type="button"]:hover {
-  background: #4691a4;
   box-shadow: none;
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
